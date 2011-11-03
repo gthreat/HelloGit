@@ -1,0 +1,26 @@
+git add filename
+git status
+git commit -m 'this command only commits previouly added files'
+git commit -am 'this command adds and commits"
+push origin master
+
+git log
+git show
+gitk (app de ver a arvore GUI)
+git checkout FILENAME (repoe a versao do github localmente)
+git reflog 
+git reset --hard 80f4f91 (voltar atras no tempo p recuperar um ficheiro)
+git push --force (necessario quando se muda o header de um snapshot << comando anterior >> )
+
+git reset HEAD README2
+notepad .gitignore
+git rm --cached README2
+git add .gitignore
+git commoit -m "added ignore file"
+su <username> (switch user)
+pwd (check path)
+
+-> Se um outro utilizador fez push de um ficheiro que vou fazer commit vou ter um erro.
+   Tenho que realizar pull, e vou levar com erro (Auto-mergin) - conflict.
+-> git mergetool
+-> git rm filename.orig (Faz um backup do original - aqui estamos a apagar)
